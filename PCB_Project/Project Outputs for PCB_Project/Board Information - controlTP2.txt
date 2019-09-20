@@ -1,0 +1,17 @@
+Board Information Report
+Filename     : C:\Users\malen\Desktop\CONTROL\CONTROL_TP2\PCB_Project\controlTP2.PcbDoc
+Date         : 20/9/2019
+Time         : 08:59:17
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 50mmx50.038mm
+    Components on board, 25
+count : 2
+
+Routing Information
+    Routing completion, 100,00%
+    Connections, 51
+    Connections routed, 51
+    Connections remaining, 0
+count : 4

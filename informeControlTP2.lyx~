@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -29,9 +29,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -55,13 +57,17 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1.9cm
+\topmargin 1.9cm
+\rightmargin 1.9cm
+\bottommargin 2.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style french
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -75,8 +81,24 @@
 
 \begin_body
 
-\begin_layout Part
-TP Sistemas de control - Pole placing
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "caratula.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -556,10 +578,19 @@ Por otro lado,
 \end_inset
 
 se reinyecta en el lazo como 
-\begin_inset Formula $-x_{2}.\frac{R_{4}}{R_{f2}}\Rightarrow k_{2}=\frac{R_{4}}{R_{f2}}=1.75\Rightarrow R_{f2}=\frac{R_{4}}{1.75}\simeq5K6\Omega$
+\begin_inset Formula $-x_{2}.\frac{R_{4}}{R_{f2}}\Rightarrow k_{2}=\frac{R_{4}}{R_{f2}}=1.75\Rightarrow R_{f2}=\frac{R_{4}}{1.75}\simeq5K7\Omega$
 \end_inset
 
-.
+ (si se utiliza un valor comercial de 
+\begin_inset Formula $5K6\Omega$
+\end_inset
+
+ aún se obtiene un valor aceptable de 
+\begin_inset Formula $\xi\simeq0.61$
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Standard

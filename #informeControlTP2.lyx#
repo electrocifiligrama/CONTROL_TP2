@@ -810,15 +810,7 @@ A lo largo del trabajo se lograron diseñar adecuadamente las realimentaciones
  orden) y expresando las mismas en ecuaciones de primer orden, es decir
  que se correspondió cada variable de estado con cada integrador circuital
  de la planta propuesta.
- Una vez resuelto el sistema y verificado su controlabilidad se procedió
- a calcular las constantes de realimentación de cada variable de estado
- según la exigencia de diseño sobre el sobre pico porcentual.
- Para hallar estas constantes, no se realizaron razonamientos relacionados
- con la teoría de circuitos si no que se aplicó solo la teoría de control.
- Finalmente, si fue necesaria la teoría de circuitos para poder plasmar
- las modificaciones en la planta.
- En conclusión, de esto se trató el exitoso método diseño que pudo ser corrobora
-do mediante simulaciones y mediciones.
+ Luego, 
 \end_layout
 
 \end_body

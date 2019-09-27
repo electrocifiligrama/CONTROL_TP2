@@ -106,8 +106,45 @@ Introducción
 \end_layout
 
 \begin_layout Standard
-Hay que hablar de que se trata el tp, mostrar el circuito propuesto y mencionar
- lo que se va a hacer.
+La realimentación lineal de estados es una herramienta útil en la teoría
+ de control ya que permite modificar características de una planta como
+ su respuesta transitoria agregando un lazo de realimentación con tan solo
+ una ganancia en el mismo.
+ Para poner en evidencia la utilidad de esta herramienta se propone un circuito
+ sin realimetación al cual se le quiere corregir su respuesta transitoria
+ con un sobrepico porcentual menor a un 20%.
+ El circuito propuesto es el siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Planta circuital propuesta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -345,7 +382,7 @@ Por otro lado, la ganancia del sistema (numerador) esta dado por la constante
 \end_layout
 
 \begin_layout Standard
-Reemplazando los valores de los componentesy eligiendo 
+Reemplazando los valores de los componentes y eligiendo 
 \begin_inset Formula $\xi=0.6$
 \end_inset
 
@@ -536,6 +573,13 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/esquematicoImagensita.PNG
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -611,9 +655,9 @@ Finalmente, con estos valores de resistencias de realimentación, se logra
 \end_layout
 
 \begin_layout Standard
-A modo verificación del método de realimentación de estados lineales, se
- procederá a continuación a resolver el circuito planteado en el esquemático,
- y se mostrará como efectivamente se llega a la misma transferencia obtenida
+A modo de verificación del método de realimentación de estados lineales,
+ se procederá a continuación a resolver el circuito planteado en el esquemático,
+ y se mostrará cómo efectivamente se llega a la misma transferencia obtenida
  mediante el método propuesto inicialmente.
 \end_layout
 
@@ -661,8 +705,28 @@ Mediciones y análisis de resultados
 Sobre control integral
 \end_layout
 
+\begin_layout Standard
+El método de pole-placement utilizado hasta aquí es de utilidad para modificar
+ respuestas transitorias, sin embargo no modifica la respuesta en régimen
+ permanente.
+ Para lograr esto último es necesario un control integral, incorporando
+ otra realimentación e integrando el error (diferencia entre realimentación
+ y entrada).
+ De todas formas, en los resultados obtenidos de las mediciones y simulaciones
+ de esta planta, no se obtiene un error de estado estacionario y no se debería
+ esperar un error de este tipo siempre que se puedan considerar despreciables
+ las perturbaciones externas hacia la planta.
+ Dado este último caso, no es necesario el control integral para correción
+ del estado estacionario.
+ 
+\end_layout
+
 \begin_layout Section
 Sobre el plano de fase
+\end_layout
+
+\begin_layout Standard
+Metodo gráfico, 2D si tenemos dos variables de estado, joya.
 \end_layout
 
 \begin_layout Section
@@ -677,8 +741,65 @@ k2
 
 \end_layout
 
+\begin_layout Standard
+Para la correción de la respuesta transitoria, es importante mantener cada
+ realimentación para cada variable de estado.
+ Si no se incluiría la realimentación de constante 
+\begin_inset Formula $"k_{2}"$
+\end_inset
+
+, por ejemplo, se obtendría que el factor de amortiguamiento 
+\begin_inset Formula $"\xi"$
+\end_inset
+
+ es nulo, ya que según se puede notar en la función transferencia de la
+ planta: 
+\begin_inset Formula $2\xi w_{n}=M_{1}k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Esto quiere decir que sin la realimentación 
+\begin_inset Formula $"k_{2}"$
+\end_inset
+
+ se obtendría una oscilación armónica en la frecuencia 
+\begin_inset Formula $w_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A continuación se presentan los resultados obtenidos de la planta sin la
+ realimentación 
+\begin_inset Formula $k_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+DECIR QUE COSA SE MIDIO Y PONER LAS MEDICIONES SIN K2 ACAAAAAAA
+\end_layout
+
+\begin_layout Standard
+En la práctica existen atenuaciones debido a las limitaciones físicas del
+ ambiente de la planta, por lo cual es esperable que en lugar de observar
+ una oscilación armónica se observe una respuesta subamortiguada.
+ 
+\end_layout
+
 \begin_layout Section
 Conclusión
+\end_layout
+
+\begin_layout Standard
+A lo largo del trabajo se lograron diseñar adecuadamente las realimentaciones
+ lineales de estados, planteando dos estados
 \end_layout
 
 \end_body

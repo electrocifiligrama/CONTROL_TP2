@@ -118,11 +118,18 @@ La realimentación lineal de estados es una herramienta útil en la teoría
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/fotoIntro.PNG
+
+\end_inset
+
 
 \end_layout
 
@@ -462,7 +469,7 @@ Para lograr esto, se propone realizar una realimentación negativa para cada
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -697,8 +704,135 @@ Reemplazando los valores de los componentes, finalmente se comprueba:
 Simulación Matlab - Simulink
 \end_layout
 
+\begin_layout Standard
+Se utilizó el siguiente esquema para realizar la simulación, siguiendo el
+ esquema de realimentación planteado teóricamente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/simulacion_Esquema.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema de simulación en simulink
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al medir, se obtuvieron los siguientes resultados:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/simulink.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulación Simulink
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se observa un sobrepico menor al 10% para la respuesta subamortiguada de
+ segundo orden, lo cual cumple con consigna.
+\end_layout
+
 \begin_layout Section
 Mediciones y análisis de resultados
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/realimentado_1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la respuesta la escalón del circuito realimentado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -726,7 +860,173 @@ Sobre el plano de fase
 \end_layout
 
 \begin_layout Standard
-Metodo gráfico, 2D si tenemos dos variables de estado, joya.
+Se usó el método gráfico de plano de fase para determinar el orden del circuito
+ y su estabilidad.
+\end_layout
+
+\begin_layout Standard
+Se midieron las variables de estado del circuito realimentando y tomando
+ como nodos al Borne 2 y Borne 4:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/realimentado_2.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición sin K2 de las variables de estado en tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, se procedió a graficar una variable en contraposición de la otra:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/fase_realimentado_2.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición sin K2, plano de fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se midieron las variables de estado del circuito sin realimentar, tomando
+ como nodos al Borne 2 y Borne 4:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/sin_realimentar_2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición sin K2 de las variables de estado en tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, se procedió a graficar una variable en contraposición de la otra:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenesInforme/fase_sin_realimentado_2.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición sin K2, plano de fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -783,13 +1083,56 @@ A continuación se presentan los resultados obtenidos de la planta sin la
 \end_layout
 
 \begin_layout Standard
-DECIR QUE COSA SE MIDIO Y PONER LAS MEDICIONES SIN K2 ACAAAAAAA
+Se midió la respuesta al escalón del sistema sin realimentar:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagenesInforme/sin_realimentar_1.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición sin K2, entrada vs salida
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 En la práctica existen atenuaciones debido a las limitaciones físicas del
  ambiente de la planta, por lo cual es esperable que en lugar de observar
- una oscilación armónica se observe una respuesta subamortiguada.
+ una oscilación armónica se observe una respuesta subamortiguada con un
+ factor de amortiguamiento relativamente 
+\begin_inset Formula $"$
+\end_inset
+
+bajo
+\begin_inset Formula $"$
+\end_inset
+
+.
  
 \end_layout
 
@@ -799,7 +1142,19 @@ Conclusión
 
 \begin_layout Standard
 A lo largo del trabajo se lograron diseñar adecuadamente las realimentaciones
- lineales de estados, planteando dos estados
+ lineales de estados, planteando dos variables estados (sistema de segundo
+ orden) y expresando las mismas en ecuaciones de primer orden, es decir
+ que se correspondió cada variable de estado con cada integrador circuital
+ de la planta propuesta.
+ Una vez resuelto el sistema y verificado su controlabilidad se procedió
+ a calcular las constantes de realimentación de cada variable de estado
+ según la exigencia de diseño sobre el sobre pico porcentual.
+ Para hallar estas constantes, no se realizaron razonamientos relacionados
+ con la teoría de circuitos si no que se aplicó solo la teoría de control.
+ Finalmente, si fue necesaria la teoría de circuitos para poder plasmar
+ las modificaciones en la planta.
+ En conclusión, de esto se trató el exitoso método diseño que pudo ser corrobora
+do mediante simulaciones y mediciones.
 \end_layout
 
 \end_body
